@@ -1,0 +1,144 @@
+﻿
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+table {
+    margin: 0 0 20px;
+    width: 100%;
+}
+table thead{
+  background:#eee;
+}
+table thead td, table thead th  {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #111;
+  font-size:20px;
+  text-align:center;
+}
+table td, table th {
+    border: 1px solid #ccc;
+    padding: 5px;
+  font-size:18px
+}
+.total td, .total th{
+  padding:20px
+}
+td.remove {
+    width: 30px;
+    position: relative;
+}
+#btn-close {
+    font-size:20px;
+    color:#9d060d;
+  opacity:1;
+  padding:5px;
+}
+.productdesc{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productdesc img {
+    width: 60px;
+  border-radius:5px;
+}
+.productdesc h6, table tbody td{
+  font-family: Poppins,sans-serif;
+    font-weight: 600;
+  text-transform:none;
+    font-size:18px;
+  text-align:center;
+  margin-bottom:0;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 18px;
+  color: #43484D;
+  font-weight: 300;
+}
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+.cart-header h3{
+  font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #66737E;
+    padding: 10px 15px;
+    text-align: center;
+  margin-bottom:0;
+}
+.btn-order{
+     text-align: center;
+    color:white;
+    background:#9d060d;
+    padding: 10px;
+    display: block;
+    font-weight: 600;
+    border-radius: 0;
+    width:100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+  font-size:16px;
+}
+.btn-order:hover, .btn-order:active{
+  text-decoration:none;
+  color:#fff;
+}
+.cart-header table{
+  margin:0 0 5px;
+}
+@media (min-width: 768px)
+  .col-sm-6{
+  margin-left:auto!important;
+  margin-right:auto!important;
+  }
+@media (min-width: 768px){
+  #cart-total{
+    display:flex;
+    justify-content:center;
+    margin-bottom:15px
+  }
+}
+@media (max-width: 768px){
+  .btn-order{
+    margin-top:10px;
+  }
+}
+@media (max-width:515px){
+  .center{
+    display:block;
+      margin:0 auto;
+}
+  table thead td, table thead th{
+    font-size:12px
+  }
+  .productdesc h6, table tbody td{
+    font-size:12px
+  }
+  table td, table th{
+    font-size:12px
+  }
+  .quantity input{
+    width:20px;
+    font-size:14px;
+  }
+  

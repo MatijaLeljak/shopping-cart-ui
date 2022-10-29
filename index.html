@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shopping cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="cart-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+  <table>
+    <thead>
+      <tr>
+        <th class="removeItem"></th>
+        <th>Proizvod</th>
+        <th>Cijena</th>
+        <th>Količina</th>
+        <th>Ukupno</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="remove"><button type="button" id="btn-close" class="close">×</button></td>
+        <td>
+          <div class="productdesc">
+            <img src="https://i.imgur.com/xmAr8Xu.jpeg">
+            <h6>Cheeseburger</h6>
+          </div>
+            </td>
+        <td>32,00 Kn</td>
+        <td>
+          <div class="quantity">
+      <input type="button" id="remove_0" onclick="CalculateTotal(this,0)" value="-" class="center">
+      <input type="text" placeholder="1" name="quantity" id="quantity_0" onchange="CalculateTotal(this,0)" class="center" value="1" readonly>
+      <input type="button" id="add_0" onclick="CalculateTotal(this,0)" value="+" class="center">
+          </div></td>
+        <td>32,00 Kn</td>
+      </tr>
+      <tr>
+        <td class="remove"><button type="button" id="btn-close" class="close">×</button></td>
+        <td>
+          <div class="productdesc">
+            <img src="https://i.imgur.com/N4O9dXj.jpeg">
+            <h6>Hamburger</h6>
+          </div>
+            </td>
+        <td>32,00 Kn</td>
+        <td>
+          <div class="quantity">
+      <input type="button" id="remove_0" onclick="CalculateTotal(this,0)" value="-" class="center">
+                <input type="text" placeholder="1" name="quantity" id="quantity_0" onchange="CalculateTotal(this,0)" class="center" value="1" readonly>
+                <input type="button" id="add_0" onclick="CalculateTotal(this,0)" value="+" class="center">
+          </div></td>
+        <td>32,00 Kn</td>
+      </tr>
+      <tr>
+        <td class="remove"><button type="button" id="btn-close" class="close">×</button></td>
+        <td>
+          <div class="productdesc">
+            <img src="https://d17zv3ray5yxvp.cloudfront.net/variants/1Twnp8nJuQBBW3BhoUPV1ad2/57ed05bea98bceae5f0eaada26b69cee6c61471d3030f7123d212844a35eba04">
+            <h6>Heineken</h6>
+          </div>
+            </td>
+        <td>32,00 Kn</td>
+        <td>
+          <div class="quantity">
+      <input type="button" id="remove_0" onclick="CalculateTotal(this,0)" value="-" class="center">
+                <input type="text" placeholder="1" name="quantity" id="quantity_0" onchange="CalculateTotal(this,0)" class="center" value="1" readonly>
+                <input type="button" id="add_0" onclick="CalculateTotal(this,0)" value="+" class="center">
+          </div></td>
+        <td>32,00 Kn</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+    <div id="cart-total" class="col-md-3 c">
+      <div class="cart-header">
+        <h3>Ukupno u košarici</h3>
+        <table class="total">
+          <tbody>
+            <tr>
+              <th>Ukupno</th>
+              <td>96,00 Kn</td>
+            </tr>
+            <tr>
+              <th>PDV 25%</th>
+              <td>24,00 Kn</th>
+            </tr>
+            <tr>
+              <th>Sveukupno</th>
+              <td>120,00 Kn</td>
+        </tr>
+        </table>
+         <a href="" class=" btn-order">Dovrši kupovinu</a> 
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-md-3"><a href="" class=" btn-order">Nastavi kupovati</a></div>
+  </div>
+    
+  </div>
+</div>
+  </body>
+</html>
